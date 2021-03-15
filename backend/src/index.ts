@@ -34,6 +34,7 @@ const main = async () => {
         sameSite: "lax",
         secure: __prod__, //cookie only work in https
       },
+      saveUninitialized: false,
       secret: "keyboard cat",
       resave: false,
     })
