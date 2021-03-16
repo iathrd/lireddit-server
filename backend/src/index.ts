@@ -56,7 +56,7 @@ const main = async () => {
     context: ({ req, res }) => ({ em: orm.em, req, res }),
   });
 
-  aplloServer.applyMiddleware({ app });
+  aplloServer.applyMiddleware({ app, cors: false });
 
   app.listen(4000, () => {
     console.log("App start on port 4000");
